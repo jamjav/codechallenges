@@ -1,4 +1,4 @@
-package src.main.java.datastructures.array.outputs;
+package src.main.java.outputs;
 
 public class Printf {
 
