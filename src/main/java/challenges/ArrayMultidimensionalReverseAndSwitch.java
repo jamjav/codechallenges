@@ -6,7 +6,7 @@ import src.main.java.datastructures.array.multidimensional.Initialize;
 import java.util.Arrays;
 
 
-public class VectorCodeChallengeTuring {
+public class ArrayMultidimensionalReverseAndSwitch {
 
     public static void main(String[] args) {
 
