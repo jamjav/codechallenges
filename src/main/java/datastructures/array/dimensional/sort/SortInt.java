@@ -1,9 +1,9 @@
-package src.main.java.datastructures.array.dimensional;
+package src.main.java.datastructures.array.dimensional.sort;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Sort {
+public class SortInt {
 
 
     // function reverses the elements of the src.main.java.datastructure.array

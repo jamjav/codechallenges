@@ -1,4 +1,4 @@
-package src.main.java.datatypes.string.functions;
+package src.main.java.challenges;
 
 import src.main.java.datatypes.string.sort.Reverse;
 

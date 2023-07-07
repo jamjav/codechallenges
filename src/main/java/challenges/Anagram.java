@@ -1,4 +1,4 @@
-package src.main.java.datatypes.string.functions;
+package src.main.java.challenges;
 
 import src.main.java.datatypes.string.sort.Count;
 import src.main.java.datatypes.string.sort.Distinct;
@@ -28,7 +28,7 @@ public class Anagram {
         String firstString = sc.nextLine();
         System.out.println("Enter Second word: ");
         String secondString = sc.nextLine();
-        System.out.println(isAnagram(firstString, secondString) ? "Anagrams" : "Not Anagrams");
+        System.out.println(isAnagram(firstString.toLowerCase(), secondString.trim()) ? "Anagrams" : "Not Anagrams");
 
     }
 }
