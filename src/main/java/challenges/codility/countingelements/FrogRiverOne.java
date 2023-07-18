@@ -1,11 +1,13 @@
-package challenges.codility;
+package challenges.codility.countingelements;
 
 import java.lang.reflect.Array;
 
+/**
+ * @author jamjav
+ * exercise: <a href="https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/">...</a>
+ * result: <a href="https:app.codility.com/demo/results/trainingB37MZ2-2RW/">...</a>
+ */
 public class FrogRiverOne {
-
-
-    //https:app.codility.com/demo/results/trainingB37MZ2-2RW/
 
     public static int solution(int X, int[] A) {
 
