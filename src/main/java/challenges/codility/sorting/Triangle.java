@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @autor: jamjav
- * Exercise: <a href="https://app.codility.com/programmers/lessons/6-sorting/triangle/">...</a>
+ * exercise: <a href="https://app.codility.com/programmers/lessons/6-sorting/triangle/">...</a>
  * result: <a href="https://app.codility.com/demo/results/trainingVU8TCK-H3Z/">...</a>
  */
 public class Triangle {
