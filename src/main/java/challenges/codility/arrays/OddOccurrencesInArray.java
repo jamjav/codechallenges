@@ -1,21 +1,28 @@
-package challenges.codility;
+package challenges.codility.arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+
+/**
+ * @author jamjav
+ * exercise: <a href="https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/">...</a>
+ * result: <a href="https://app.codility.com/demo/results/trainingWAZE94-YEY/">...</a>
+ */
 public class OddOccurrencesInArray {
-    public static int solution(int[] A) throws RuntimeException {
+    public static int solution(int[] A) {
 
         HashMap<Integer, Integer> occurrencesMap = new HashMap<Integer, Integer>();
 
-        for (int i = 0; i < A.length; i++) {
-            if (occurrencesMap.containsKey(A[i])) {
-                int occurrences = occurrencesMap.get(A[i]);
+        //populate HashMap using int Array
+        for (int j : A) {
+            if (occurrencesMap.containsKey(j)) {
+                int occurrences = occurrencesMap.get(j);
                 occurrences++;
-                occurrencesMap.put(A[i], occurrences); //increment occurrence counter and store it
+                occurrencesMap.put(j, occurrences);
             } else {
-                occurrencesMap.put(A[i], 1); //1st occurrences of this value
+                occurrencesMap.put(j, 1);
             }
         }
 
@@ -23,7 +30,8 @@ public class OddOccurrencesInArray {
             if (Integer.parseInt(entry.getValue().toString()) % 2 != 0)
                 return Integer.parseInt(entry.getKey().toString());
         }
-        throw new RuntimeException("should've return unpaired value by now");
+
+        return 0;
     }
 
     public static void main(String[] args) {
