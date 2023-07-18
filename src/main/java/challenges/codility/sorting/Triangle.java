@@ -2,13 +2,18 @@ package challenges.codility.sorting;
 
 import java.util.Arrays;
 
+/**
+ * @autor: jamjav
+ * Exercise: <a href="https://app.codility.com/programmers/lessons/6-sorting/triangle/">...</a>
+ * result: <a href="https://app.codility.com/demo/results/trainingVU8TCK-H3Z/">...</a>
+ */
 public class Triangle {
 
 
-    /*
-    https://app.codility.com/demo/results/trainingVU8TCK-H3Z/
+    /**
+     * @param A
+     * @return
      */
-
     public static int solution(int[] A) {
 
         int lenArray = A.length;
@@ -21,6 +26,12 @@ public class Triangle {
         return (isTriangular(A[lenArray - 3], A[lenArray - 2], A[lenArray - 1])) ? 1 : 0;
     }
 
+    /**
+     * @param P
+     * @param Q
+     * @param R
+     * @return
+     */
     public static boolean isTriangular(long P, long Q, long R) {
         return (P + Q > R && Q + R > P && R + P > Q);
     }
