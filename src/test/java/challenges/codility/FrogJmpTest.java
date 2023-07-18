@@ -1,5 +1,6 @@
 package challenges.codility;
 
+import challenges.codility.timecomplexity.FrogJmp;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
