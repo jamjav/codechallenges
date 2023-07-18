@@ -9,11 +9,6 @@ import java.util.Arrays;
  */
 public class Triangle {
 
-
-    /**
-     * @param A
-     * @return
-     */
     public static int solution(int[] A) {
 
         int lenArray = A.length;
@@ -26,16 +21,9 @@ public class Triangle {
         return (isTriangular(A[lenArray - 3], A[lenArray - 2], A[lenArray - 1])) ? 1 : 0;
     }
 
-    /**
-     * @param P
-     * @param Q
-     * @param R
-     * @return
-     */
     public static boolean isTriangular(long P, long Q, long R) {
         return (P + Q > R && Q + R > P && R + P > Q);
     }
-
 
     public static void main(String[] args) {
         int response = 0;
