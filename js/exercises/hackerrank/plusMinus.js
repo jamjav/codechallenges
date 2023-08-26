@@ -12,7 +12,6 @@ function plusMinus(arr) {
     const t0 = performance.now()
     console.log('Running plusMinus');
 
-
     const divisor = arr.length;
 
     let char;
@@ -49,12 +48,10 @@ function plusMinusOpt(arr) {
     console.log('Running plusMinusOpt');
 
 
-
     const divisor = arr.length;
     const ZeroCount = arr.filter((x) => x == 0).length;
     const positiveCount = arr.filter((x) => x > 0).length;
     const negativeCount = arr.filter((x) => x < 0).length;
-
 
     console.log((positiveCount / divisor).toFixed(6));
     console.log((negativeCount / divisor).toFixed(6));
@@ -62,18 +59,16 @@ function plusMinusOpt(arr) {
 
     const t1 = performance.now()
     console.log('execution time:' + (t1 - t0) + ' ms')
-
-
 }
 
 const test1 = [-4, 3, -9, 0, 4, 1];
 const test2 = [-4, 3, -9, 0, 4, 1, 3, -9, 0, 4, 1, 3, -9, 0, 4, 1, 3, -9, 0, 4, 1, 3, -9, 0, 4, 1, 3, -9, 0, 4, 1, 3, -9, 0, 4, 1, 3, -9, 0, 4, 1];
 
-console.log('Test 1......\n');
+console.log('\nTest 1......\n');
 plusMinus(test1)
 plusMinusOpt(test1)
 
-console.log('Test 2......\n');
+console.log('\nTest 2......\n');
 plusMinus(test2)
 plusMinusOpt(test2)
 
